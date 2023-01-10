@@ -55,8 +55,18 @@ class HeroRepositoryImpl : HeroRepository {
         )
     }
 
-    override suspend fun searchHeroes(name: String): ApiResponse {
-        TODO("Not yet implemented")
+    override suspend fun searchHeroes(name: String?): ApiResponse {
+
+        return ApiResponse(
+            success = true,
+            message = HttpStatusCode.OK.description,
+            heroes = findHeroes(name)
+        )
+    }
+
+    private fun findHeroes(name: String?): List<Hero> {
+        if(name.isNullOrBlank()) return emptyList()
+        return heroes.values.flatten().filter { it.name.contains(name, true) }
     }
 
 }

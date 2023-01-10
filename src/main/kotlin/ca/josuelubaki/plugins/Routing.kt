@@ -2,6 +2,7 @@ package ca.josuelubaki.plugins
 
 import ca.josuelubaki.routes.getAllHeroes
 import ca.josuelubaki.routes.root
+import ca.josuelubaki.routes.searchHeroes
 import io.ktor.server.routing.*
 import io.ktor.http.*
 import io.ktor.server.application.*
@@ -14,6 +15,7 @@ fun Application.configureRouting() {
     routing {
         root()
         getAllHeroes()
+        searchHeroes()
 
         static("/images") {
             resources("images")
