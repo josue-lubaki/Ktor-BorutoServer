@@ -1,5 +1,6 @@
 package ca.josuelubaki.plugins
 
+import ca.josuelubaki.routes.getAllHeroes
 import ca.josuelubaki.routes.root
 import io.ktor.server.routing.*
 import io.ktor.http.*
@@ -11,5 +12,6 @@ fun Application.configureRouting() {
 
     routing {
         root()
+        getAllHeroes()
     }
 }
