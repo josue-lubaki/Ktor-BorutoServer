@@ -15,7 +15,7 @@ fun Application.configureStatusPages() {
     install(StatusPages) {
         status(HttpStatusCode.NotFound) { call, _ ->
             call.respond(
-                message = "Page Not found",
+                message = "Page not found",
                 status = HttpStatusCode.NotFound
             )
         }
