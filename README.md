@@ -1,1 +1,1 @@
-# Ktor-BorutoServer
+# Ktor-BorutoServer [![CircleCI](https://circleci.com/gh/josue-lubaki/Ktor-BorutoServer/tree/main.svg?style=svg&circle-token=f977735561fd7d6eadd35a153d67b8ceeccf57e9)](https://circleci.com/gh/josue-lubaki/Ktor-BorutoServer/tree/main)
