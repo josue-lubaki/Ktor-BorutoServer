@@ -33,7 +33,9 @@ dependencies {
     implementation("io.ktor:ktor-server-host-common-jvm:2.2.2")
     implementation("io.ktor:ktor-server-status-pages-jvm:2.2.2")
 
-    testImplementation("io.ktor:ktor-server-tests-jvm:$ktorVersion")
+    // Testing dependencies
+    testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:$kotlinVersion")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion")
 
     // Koin for Ktor
