@@ -16,10 +16,10 @@ jobs:
       - checkout
       - run:
           name: "build"
-          command: ./gradlew -t build
+          command: gradlew -t build
       - run:
           name: "test"
-          command: ./gradlew test
+          command: gradlew test
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
