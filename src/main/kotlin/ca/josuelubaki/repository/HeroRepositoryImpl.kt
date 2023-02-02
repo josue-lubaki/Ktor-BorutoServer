@@ -41,7 +41,8 @@ class HeroRepositoryImpl : HeroRepository {
             message = HttpStatusCode.OK.description,
             prevPage = calculatePage(page)[PREV_PAGE_KEY],
             nextPage = calculatePage(page)[NEXT_PAGE_KEY],
-            heroes = heroes[page]!!
+            heroes = heroes[page]!!,
+            lastUpdated = System.currentTimeMillis()
         )
     }
 
