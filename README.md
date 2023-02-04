@@ -1,5 +1,8 @@
 # Ktor-BorutoServer [![CircleCI](https://circleci.com/gh/josue-lubaki/Ktor-BorutoServer/tree/main.svg?style=svg&circle-token=f977735561fd7d6eadd35a153d67b8ceeccf57e9)](https://circleci.com/gh/josue-lubaki/Ktor-BorutoServer/tree/main)
 
+---
+![Imgur](https://i.imgur.com/FvR3xZV.png)
+
 
 ## Description
 Android app for Boruto: Naruto Next Generations anime. It's a simple app that shows your favorite hero and his/her skills.
